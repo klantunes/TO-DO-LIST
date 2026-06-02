@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="card">
+        <h1>Lista de tarefas</h1>
+        <div class="input">
+            <input type="text" id="task-input" placeholder="colocar uma nova tarefa...">
+            <button id="add-button">+</button>
+
+        </div>
+        
+        <div class="filters">
+            <button class="filter-button" id="filter-all">Todas</button>
+            <button class="filter-button" id="filter-pending">Pendentes</button>
+            <button class="filter-button" id="filter-completed">Concluídas</button>
+            <button class="filter-button" id="clear-completed">Limpar Concluídas</button>
+            <button class="filter-button" id="clear-all">Limpar Tudo</button>
+            <button id="theme-toggle">🌙</button>
+        </div>
+           <div class="progress-container">
+        <div id="progress-bar"></div>
+        </div>
+        <p id="empty-message">🛌 Sem tarefas por enquanto...</p>
+        <div class="task" id="task-list">
+                    <p class="task-counter" id="task-counter">0 tarefas</p>
+                    <p id="task-status"></p>
+                </div>
+            </div>
+                    
+                
+    </div>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
